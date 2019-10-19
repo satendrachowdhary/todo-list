@@ -17,7 +17,7 @@ ul.addEventListener("click", event => {
 });
 
 function inputLength() {
-  return input.value.replace(/\s/g, "").length > 0;
+  return input.value.trim().length > 0;
 }
 
 function createListElement() {
