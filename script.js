@@ -17,7 +17,7 @@ ul.addEventListener("click", event => {
 });
 
 function inputLength() {
-  return input.value.trim().length > 0;
+  return input.value.trim().length;
 }
 
 function createListElement() {
@@ -34,13 +34,13 @@ function createListElement() {
 }
 
 function addListAfterClick() {
-  if (inputLength()) {
+  if (inputLength() > 0) {
     createListElement();
   }
 }
 
 function addListAfterKeypress(event) {
-  if (inputLength() && event.keyCode === 13) {
+  if (inputLength() > 0 && event.keyCode === 13) {
     createListElement();
   }
 }
