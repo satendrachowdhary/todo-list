@@ -1,3 +1,16 @@
 .done {
   text-decoration: line-through;
 }
+
+button {
+  position: absolute;
+  right: 60vw;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+#enter {
+  position: static;
+}
